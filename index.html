@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="id"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Panduan Bersuci dan Shalat saat sakit</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Young+Serif&family=Figtree:wght@400;500;700&family=Amiri:wght@400;700&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#f1f7f5;--card:#fff;--ink:#12302f;--mute:#4d6663;--teal:#0f5c58;--water:#2f86ad;--sand:#d4a95f;--line:#cfe0dc;--soft:#e2efeb;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media(prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0b1b1b;--card:#12292a;--ink:#e6f2ef;--mute:#9fb8b4;--teal:#5fc4bb;--water:#6bb8de;--sand:#e0b972;--line:#244443;--soft:#17302f}}
+:root[data-theme="dark"]{--bg:#0b1b1b;--card:#12292a;--ink:#e6f2ef;--mute:#9fb8b4;--teal:#5fc4bb;--water:#6bb8de;--sand:#e0b972;--line:#244443;--soft:#17302f}
+html{scroll-behavior:smooth;scroll-padding-top:calc(64px + env(safe-area-inset-top,0px));height:100%}
+*,*:before,*:after{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:17px/1.65 Figtree,system-ui,sans-serif}
+h1,h2,h3{font-family:'Young Serif',Georgia,serif;font-weight:400;line-height:1.2;margin:0 0 .5em}
+h2{font-size:clamp(1.6rem,4vw,2.2rem)}h3{font-size:1.25rem}
+p{margin:0 0 1em;max-width:68ch}
+.ar{font-family:Amiri,'Traditional Arabic',serif;font-size:1.6rem;line-height:2;direction:rtl;text-align:right;color:var(--teal)}
+nav{position:sticky;top:env(safe-area-inset-top,0px);z-index:10;background:color-mix(in srgb,var(--bg) 88%,transparent);backdrop-filter:blur(10px);border-bottom:1px solid var(--line);display:flex;gap:6px;padding:10px 16px;overflow-x:auto}
+nav a{color:var(--ink);text-decoration:none;padding:6px 14px;border-radius:99px;white-space:nowrap;font-weight:500;font-size:.95rem}
+nav a:hover,nav a.on{background:var(--teal);color:var(--bg)}
+a:focus-visible,button:focus-visible,summary:focus-visible{outline:3px solid var(--water);outline-offset:2px}
+.wrap{max-width:980px;margin:0 auto;padding:0 20px}
+section{padding:56px 0}
+.hero{position:relative;overflow:hidden;padding:72px 0 64px;background:linear-gradient(180deg,var(--soft),var(--bg))}
+.rip{position:absolute;right:-120px;top:-60px;width:520px;height:520px;pointer-events:none}
+.rip i{position:absolute;inset:0;border:2px solid var(--water);border-radius:50%;opacity:0;animation:rip 7s ease-out infinite}
+.rip i:nth-child(2){animation-delay:2.3s}.rip i:nth-child(3){animation-delay:4.6s}
+@keyframes rip{0%{transform:scale(.1);opacity:.55;border-color:var(--water)}70%{opacity:.2;border-color:var(--sand)}100%{transform:scale(1);opacity:0;border-color:var(--sand)}}
+.hero h1{font-size:clamp(2.2rem,6.5vw,4rem);max-width:18ch;position:relative}
+.hero p.lead{font-size:1.2rem;color:var(--mute);position:relative}
+.vals{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:14px;margin:32px 0;position:relative}
+.vals div{border-left:4px solid var(--sand);padding:4px 0 4px 14px}.vals b{display:block;font-size:1.05rem}.vals span{color:var(--mute);font-size:.95rem}
+.btn{display:inline-block;background:var(--teal);color:var(--bg);border:0;border-radius:12px;padding:12px 22px;font:700 1rem Figtree,sans-serif;cursor:pointer;text-decoration:none;transition:transform .15s}
+.btn:hover{transform:translateY(-2px)}.btn.alt{background:transparent;color:var(--teal);border:2px solid var(--teal)}
+.btn:disabled{opacity:.35;cursor:default;transform:none}
+.card{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:24px}
+.quote{border-left:4px solid var(--water);background:var(--card);padding:16px 20px;border-radius:0 14px 14px 0;margin:0 0 18px}
+.quote small{color:var(--mute);display:block}
+details{background:var(--card);border:1px solid var(--line);border-radius:14px;margin-bottom:10px;padding:0 18px}
+summary{cursor:pointer;padding:14px 0;font-weight:700;list-style:none;display:flex;justify-content:space-between}
+summary:after{content:"+";font-size:1.4rem;line-height:1;color:var(--teal);transition:transform .25s}
+details[open] summary:after{transform:rotate(45deg)}
+details>div{padding:0 0 14px;animation:open .3s ease}@keyframes open{from{opacity:0;transform:translateY(-6px)}}
+.stage{display:grid;grid-template-columns:minmax(220px,300px) 1fr;gap:24px;align-items:center}
+@media(max-width:700px){.stage{grid-template-columns:1fr}}
+.dots{display:flex;gap:8px;margin-bottom:14px}.dots button{width:34px;height:34px;border-radius:50%;border:2px solid var(--teal);background:transparent;color:var(--teal);font-weight:700;cursor:pointer}
+.dots button.on{background:var(--teal);color:var(--bg)}
+.ctl{display:flex;gap:10px;margin-top:16px;flex-wrap:wrap}
+svg{max-width:100%;height:auto}
+.fig{background:var(--soft);border-radius:16px}
+.g{display:none}
+[data-s="1"] .g1,[data-s="2"] .g2,[data-s="3"] .g3,[data-s="4"] .g4{display:block}
+.heart{transform-origin:150px 80px;animation:beat 1.2s ease-in-out infinite}.heart2{transform-origin:232px 122px;animation:beat 1.2s ease-in-out infinite}@keyframes beat{50%{transform:scale(1.25)}}
+.hand{animation:pat 1.6s ease-in-out infinite}@keyframes pat{0%,100%{transform:translateY(-34px)}45%,55%{transform:translateY(0)}}
+.puff{opacity:0;animation:puff 1.6s ease-out infinite}@keyframes puff{45%{opacity:0}60%{opacity:.8}100%{opacity:0;transform:translateY(-16px)}}
+.wipeF{animation:wf 2s ease-in-out infinite}@keyframes wf{0%{transform:translateY(-52px)}60%,100%{transform:translateY(40px)}}
+.wipeA{animation:wa 2.2s ease-in-out infinite}@keyframes wa{0%{transform:translateX(0)}60%,100%{transform:translateX(150px)}}
+.q{display:grid;gap:10px;margin:18px 0}.q button{text-align:left}
+.res{animation:open .35s ease}
+.bowbtns{display:flex;gap:8px;margin-top:10px;flex-wrap:wrap}.bowbtns button{border:2px solid var(--water);background:transparent;color:var(--ink);border-radius:99px;padding:6px 16px;font:600 .95rem Figtree;cursor:pointer}.bowbtns button.on{background:var(--water);color:#fff}
+#torso{transition:transform .8s cubic-bezier(.3,.8,.3,1);transform-origin:120px 150px}
+ul.t{padding-left:1.1em;margin:0 0 1em}ul.t li{margin-bottom:.4em}
+.note{background:var(--soft);border-radius:14px;padding:14px 18px;font-size:.95rem;color:var(--mute)}
+.ic{display:inline-grid;place-items:center;width:1.7em;height:1.7em;margin-right:.45em;border-radius:50%;background:var(--card);border:1px solid var(--line);font-size:.75em;vertical-align:middle;line-height:1}
+.vals .ic{display:grid;margin:0 0 8px;font-size:1.15rem}
+.moon{position:absolute;right:11%;top:36px;width:84px;pointer-events:none;animation:flt 6s ease-in-out infinite}
+.mosque{position:absolute;right:0;bottom:0;width:min(440px,70%);opacity:.16;pointer-events:none;fill:var(--teal)}
+@keyframes flt{50%{transform:translateY(10px) rotate(-4deg)}}
+.bsm{font-family:Amiri,serif;font-size:1.5rem;color:var(--teal);position:relative;margin:0 0 6px}
+.qibla{display:flex;gap:20px;align-items:center;margin-top:18px;flex-wrap:wrap}
+.needle{transform-origin:60px 60px;animation:sw 5s ease-in-out infinite}
+@keyframes sw{0%,100%{transform:rotate(-14deg)}50%{transform:rotate(10deg)}}
+footer{border-top:1px solid var(--line);padding:36px 0 48px;color:var(--mute);font-size:.95rem}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important;scroll-behavior:auto!important}}
+</style></head><body>
+<nav id="nav"><a href="#awal">Awal</a><a href="#tayamum">Tayamum</a><a href="#shalat">Shalat</a><a href="#pendamping">Pendamping</a></nav>
+
+<header class="hero" id="awal"><div class="rip" aria-hidden="true"><i></i><i></i><i></i></div>
+<svg class="moon" viewBox="0 0 120 120" aria-hidden="true"><path d="M70 8a52 52 0 1 0 38 88A44 44 0 0 1 70 8z" fill="var(--sand)"/><path d="M96 26l3.5 8 8.5.8-6.5 5.7 2 8.5-7.5-4.5-7.5 4.5 2-8.5-6.5-5.7 8.5-.8z" fill="var(--sand)"/></svg>
+<svg class="mosque" viewBox="0 0 400 170" aria-hidden="true"><rect x="0" y="140" width="400" height="30"/><path d="M120 140a80 74 0 0 1 160 0z"/><rect x="196" y="48" width="8" height="22"/><path d="M200 28l8 22h-16z"/><path d="M70 140a28 26 0 0 1 56 0z"/><path d="M274 140a28 26 0 0 1 56 0z"/><rect x="28" y="50" width="16" height="92"/><path d="M36 22l12 30H24z"/><rect x="356" y="50" width="16" height="92"/><path d="M364 22l12 30h-24z"/></svg>
+<div class="wrap"><p class="bsm" lang="ar" dir="rtl" style="text-align:left">بِسْمِ اللّٰهِ الرَّحْمٰنِ الرَّحِيْمِ</p><h1>Panduan Bersuci dan Shalat saat sakit</h1>
+<p class="lead">Panduan ringkas tayamum, shalat sambil duduk, dan shalat sambil berbaring untuk pasien, keluarga, dan perawat.</p>
+<div class="vals"><div><span class="ic">💚</span><b>Rahmah</b><span>Setiap pasien dilayani dengan kasih sayang.</span></div><div><span class="ic">🛡️</span><b>Hifzh an-nafs</b><span>Menjaga jiwa adalah tujuan utama syariat.</span></div><div><span class="ic">💧</span><b>Thaharah</b><span>Kebersihan menjadi dasar ibadah dan asuhan.</span></div></div>
+<a class="btn" href="#tayamum">Mulai belajar</a></div></header>
+
+<section><div class="wrap"><h2><span class="ic">📖</span>Islam memudahkan orang sakit</h2>
+<p>Sakit tidak menggugurkan kewajiban shalat. Cara melaksanakannya yang disesuaikan dengan kemampuan.</p>
+<div class="quote"><div class="ar">وَمَا جَعَلَ عَلَيْكُمْ فِي الدِّينِ مِنْ حَرَجٍ</div>“Dan Dia tidak menjadikan kesukaran untukmu dalam agama.”<small>QS. Al-Hajj: 78</small></div>
+<div class="quote"><div class="ar">صَلِّ قَائِمًا، فَإِنْ لَمْ تَسْتَطِعْ فَقَاعِدًا، فَإِنْ لَمْ تَسْتَطِعْ فَعَلَى جَنْبٍ</div>“Shalatlah sambil berdiri. Jika tidak mampu, shalatlah sambil duduk. Jika tidak mampu, shalatlah sambil berbaring miring.”<small>HR. Al-Bukhari, dari Imran bin Hushain</small></div></div></section>
+
+<section id="tayamum" style="background:var(--soft)"><div class="wrap"><h2><span class="ic">🤲</span>Tayamum: bersuci tanpa air</h2>
+<h3>Kapan boleh bertayamum?</h3>
+<details><summary><span>🩹 Air membahayakan penyakit</span></summary><div>Bila terkena air dikhawatirkan sakit bertambah parah atau kesembuhan terhambat, misalnya luka terbuka, demam tinggi, atau menurut saran dokter.</div></details>
+<details><summary><span>🏜️ Tidak ada air</span></summary><div>Air tidak tersedia, atau tersedia tetapi tidak dapat dijangkau.</div></details>
+<details><summary><span>🛏️ Tidak mampu mengambil air</span></summary><div>Pasien tidak mampu bergerak dan tidak ada yang membantu mengambilkan atau menggunakan air untuk wudhu.</div></details>
+<h3 style="margin-top:28px">Praktik tayamum, 4 langkah</h3>
+<div class="card stage">
+<svg class="fig" id="tsvg" data-s="1" viewBox="0 0 300 260" role="img" aria-label="Ilustrasi seseorang melakukan langkah tayamum">
+<defs><g id="hand"><rect width="32" height="44" rx="14" fill="#d79a70" stroke="#8a5a3c" stroke-width="2"/><path d="M11 5v15M21 5v15" stroke="#8a5a3c" stroke-width="1.6" stroke-linecap="round"/></g></defs>
+<path d="M60 260q0-92 90-92t90 92z" fill="var(--teal)"/><path d="M150 168l-16 14 16 12 16-12z" fill="#fff" opacity=".9"/>
+<rect x="140" y="118" width="20" height="30" rx="8" fill="#d9a67c"/>
+<ellipse cx="116" cy="92" rx="5" ry="9" fill="#e2ae83"/><ellipse cx="184" cy="92" rx="5" ry="9" fill="#e2ae83"/>
+<ellipse cx="150" cy="90" rx="34" ry="40" fill="#e8b98f"/>
+<path d="M114 78q36-54 72 0v-12q-36-40-72 0z" fill="#fff" stroke="#cfd8d6" stroke-width="2"/>
+<circle cx="137" cy="92" r="3.2" fill="#3b2a20"/><circle cx="163" cy="92" r="3.2" fill="#3b2a20"/>
+<path d="M130 83q7-4 14 0M156 83q7-4 14 0" stroke="#3b2a20" stroke-width="2.4" fill="none" stroke-linecap="round"/>
+<path d="M140 112q10 7 20 0" stroke="#9a5b43" stroke-width="3" fill="none" stroke-linecap="round"/>
+<rect x="30" y="224" width="240" height="26" rx="10" fill="var(--sand)"/><path d="M50 236h20M110 240h30M190 235h26" stroke="#b88a43" stroke-width="3" stroke-linecap="round" opacity=".6"/>
+<g class="g g1"><use href="#hand" x="132" y="176"/><use href="#hand" x="150" y="176"/><path class="heart2" d="M232 110c-12-12-30 4-12 20l12 10 12-10c18-16 0-32-12-20z" fill="var(--water)"/></g>
+<g class="g g2"><g class="hand"><use href="#hand" x="108" y="184"/><use href="#hand" x="160" y="184"/></g><g class="puff"><circle cx="100" cy="222" r="6" fill="var(--sand)"/><circle cx="200" cy="222" r="8" fill="var(--sand)"/></g></g>
+<g class="g g3"><g class="wipeF" opacity=".92"><use href="#hand" x="118" y="100"/><use href="#hand" x="150" y="100"/></g></g>
+<g class="g g4"><rect x="62" y="176" width="172" height="26" rx="13" fill="#d9a67c"/><rect x="214" y="168" width="42" height="42" rx="10" fill="var(--teal)"/><g class="wipeA"><use href="#hand" x="52" y="168"/></g></g>
+</svg>
+<div><div class="dots" id="dots"></div><h3 id="st"></h3><p id="sd"></p><div id="sx"></div>
+<div class="ctl"><button class="btn alt" id="prev">Sebelumnya</button><button class="btn" id="next">Berikutnya</button></div></div></div>
+<p class="note" style="margin-top:18px">Langkah di atas mengikuti pendapat yang umum di Indonesia (mazhab Syafi’i). Sebagian ulama membolehkan satu tepukan untuk wajah dan kedua telapak tangan. Ikuti arahan ustadz atau pembimbing ibadah Anda.</p>
+<h3 style="margin-top:28px">Hal yang membatalkan tayamum</h3>
+<ul class="t"><li>Semua hal yang membatalkan wudhu.</li><li>Ketika air sudah ada atau sudah mampu memakainya (bagi yang bertayamum karena tidak ada air atau tidak mampu).</li><li>Sembuh dari sakit yang menjadi alasan tayamum.</li></ul>
+</div></section>
+
+<section id="shalat"><div class="wrap"><h2><span class="ic">🕌</span>Shalat sesuai kemampuan</h2>
+<p>Jawab pertanyaan berikut untuk melihat posisi shalat yang sesuai. Hasilnya berlaku untuk tiap rakaat.</p>
+<div class="card"><div id="wiz"></div></div>
+<div class="card qibla"><svg width="120" height="120" viewBox="0 0 120 120" role="img" aria-label="Kompas kiblat"><circle cx="60" cy="60" r="56" fill="var(--soft)" stroke="var(--teal)" stroke-width="3"/><g class="needle"><path d="M60 14l9 46H51z" fill="var(--sand)"/><path d="M60 106l9-46H51z" fill="var(--water)"/></g><circle cx="60" cy="60" r="5" fill="var(--teal)"/><text x="60" y="12" text-anchor="middle" font-size="10" fill="var(--ink)" font-family="Figtree">U</text></svg><div style="flex:1;min-width:220px"><h3>🕋 Menentukan arah kiblat</h3><p style="margin:0">Di Indonesia, kiblat berada di arah barat laut, kira-kira 295° dari utara dan sedikit berbeda tiap daerah. Gunakan aplikasi kompas atau arah kiblat di ponsel, atau tanyakan petugas rumah sakit.</p></div></div></div></section>
+
+<section id="pendamping" style="background:var(--soft)"><div class="wrap"><h2><span class="ic">🩺</span>Peran pendamping dan perawat</h2>
+<p>Kasih sayang tampak pada tindakan kecil yang membuat pasien mudah beribadah.</p>
+<ul class="t"><li>Tanyakan waktu shalat dan tawarkan bantuan sebelum waktunya tiba.</li><li>Tunjukkan arah kiblat dan atur posisi tempat tidur atau kursi sesuai kenyamanan pasien.</li><li>Bantu pasien bertayamum bila ia tidak mampu, dengan menyiapkan debu yang bersih.</li><li>Jangan terburu-buru dan jaga privasi pasien selama shalat.</li><li>Pastikan kondisi pasien aman dulu (infus, oksigen, nyeri) sebelum mengatur posisi.</li></ul>
+<p class="note">Booklet ini bersifat edukasi. Untuk kondisi khusus, tanyakan kepada ustadz atau ulama dan tenaga kesehatan yang merawat.</p></div></section>
+
+<footer><div class="wrap"><p style="font-size:1.05rem;color:var(--teal)">🌙 Semoga Allah memberi kesembuhan dan kekuatan bagi setiap pasien. 🤲</p></div></footer>
+
+<script>
+const S=[
+["🤍 Niat","Berniat dalam hati untuk tayamum agar boleh shalat. Melafalkannya hukumnya sunnah.","<div class='ar'>نَوَيْتُ التَّيَمُّمَ لِاسْتِبَاحَةِ الصَّلَاةِ فَرْضًا لِلّٰهِ تَعَالَى</div><small>Nawaitut tayammuma li istibāhatish shalāti fardhan lillāhi ta‘ālā.</small>"],
+["🤲 Tepuk pertama","Tepukkan kedua telapak tangan pada debu yang suci, seperti tanah, dinding, atau benda berdebu bersih. Bila pasien tidak mampu, pendamping dapat membantu.",""],
+["🙂 Usap wajah","Usapkan kedua telapak tangan ke seluruh wajah, dari dahi hingga dagu, secara merata.",""],
+["✋ Tepuk kedua, usap tangan","Tepukkan kembali telapak tangan pada debu suci, lalu usap tangan kanan dan kiri dari ujung jari hingga siku. Lakukan berurutan: wajah dulu, baru tangan.","<small>Setelah itu, shalat boleh dilaksanakan.</small>"]];
+let i=0;const $=id=>document.getElementById(id);
+const dots=$('dots');S.forEach((_,k)=>{const b=document.createElement('button');b.textContent=k+1;b.setAttribute('aria-label','Langkah '+(k+1));b.onclick=()=>{i=k;draw()};dots.appendChild(b)});
+function draw(){const s=S[i];$('tsvg').dataset.s=i+1;$('st').textContent=s[0];$('sd').textContent=s[1];$('sx').innerHTML=s[2];
+[...dots.children].forEach((b,k)=>b.classList.toggle('on',k==i));$('prev').disabled=i==0;$('next').disabled=i==S.length-1}
+$('prev').onclick=()=>{i--;draw()};$('next').onclick=()=>{i++;draw()};draw();
+
+const Q=[
+{q:"Apakah Anda mampu berdiri?",r:{t:"🧍 Shalat sambil berdiri",d:"Shalatlah seperti biasa. Bila hanya berat saat berdiri lama, boleh berdiri sebisanya lalu duduk.",f:null}},
+{q:"Apakah Anda mampu duduk?",r:{t:"🪑 Shalat sambil duduk",d:"Duduk menghadap kiblat di kursi, tempat tidur, atau lantai, dengan cara duduk yang paling nyaman. Ruku’: membungkuk sedikit. Sujud: membungkuk lebih rendah dari ruku’. Bila tidak dapat menyentuh lantai, cukup membungkuk.",f:"duduk"}},
+{q:"Apakah Anda mampu berbaring miring?",r:{t:"🛏️ Shalat sambil berbaring miring",d:"Berbaringlah miring ke kanan dengan tubuh menghadap kiblat. Ruku’ dan sujud dengan menganggukkan kepala, dan sujud lebih rendah dari ruku’.",f:"miring"}},
+{q:"Apakah Anda mampu berbaring telentang?",r:{t:"😌 Shalat sambil telentang",d:"Telentang dengan kaki mengarah ke kiblat. Ganjal kepala dengan bantal agar wajah menghadap kiblat. Ruku’ dan sujud dengan anggukan kepala.",f:"telentang"}},
+{q:"Apakah Anda mampu menggerakkan kepala?",r:{t:"🙏 Shalat dengan isyarat kepala",d:"Lakukan gerakan shalat dengan anggukan kepala, sujud lebih rendah dari ruku’.",f:"telentang"}}];
+const END={t:"👁️ Shalat dengan kelopak mata dan hati",d:"Bila hanya mata yang bisa digerakkan, gunakan isyarat kelopak mata. Bila itu pun tidak mampu, shalatlah dalam hati dengan mengingat gerakan dan bacaannya. Kewajiban shalat tetap ada selama akal masih sadar.",f:null};
+function fig(k){
+if(k=="duduk")return `<svg class="fig" viewBox="0 0 240 200" role="img" aria-label="Orang shalat sambil duduk"><rect x="40" y="150" width="130" height="10" rx="4" fill="var(--sand)"/><rect x="48" y="160" width="8" height="30" fill="var(--sand)"/><rect x="154" y="160" width="8" height="30" fill="var(--sand)"/><rect x="40" y="80" width="8" height="75" rx="3" fill="var(--sand)"/><path d="M120 150h60" stroke="var(--teal)" stroke-width="12" stroke-linecap="round"/><g id="torso"><circle cx="120" cy="86" r="16" fill="var(--teal)"/><rect x="108" y="106" width="24" height="44" rx="10" fill="var(--teal)"/></g><path d="M215 70l-26 0m0 0 9-9m-9 9 9 9" stroke="var(--water)" stroke-width="4" fill="none" stroke-linecap="round"/><text x="188" y="100" font-size="13" fill="var(--water)" font-family="Figtree">Kiblat</text></svg><div class="bowbtns" role="group" aria-label="Gerakan"><button class="on" data-a="0">Takbir</button><button data-a="34">Ruku’</button><button data-a="62">Sujud</button></div>`;
+const rot=k=="miring"?"":"transform:rotate(0)";
+const body=k=="miring"?`<ellipse cx="110" cy="132" rx="64" ry="22" fill="var(--teal)"/><circle cx="190" cy="126" r="17" fill="var(--teal)"/>`:`<rect x="40" y="118" width="130" height="30" rx="14" fill="var(--teal)"/><circle cx="52" cy="112" r="17" fill="var(--teal)"/>`;
+return `<svg class="fig" viewBox="0 0 260 200" role="img" aria-label="Orang shalat sambil berbaring"><rect x="20" y="150" width="220" height="14" rx="6" fill="var(--sand)"/>${body}<path d="M${k=="miring"?"60 60h120":"90 60h110"}" stroke="var(--water)" stroke-width="4" stroke-linecap="round"/><text x="${k=="miring"?150:170}" y="48" font-size="13" fill="var(--water)" font-family="Figtree">Kiblat</text></svg>`}
+let qi=0;
+function ask(){const w=$('wiz');w.innerHTML=`<h3>${Q[qi].q}</h3><div class="q"><button class="btn" id="y">Ya, mampu</button><button class="btn alt" id="n">Belum mampu</button></div>`;
+$('y').onclick=()=>show(Q[qi].r);$('n').onclick=()=>{qi++;qi<Q.length?ask():show(END)}}
+function show(r){const w=$('wiz');w.innerHTML=`<div class="res"><div class="stage"><div>${r.f?fig(r.f):"<div class='fig' style='height:160px;display:grid;place-items:center;font-size:3rem' aria-hidden='true'>🤲</div>"}</div><div><h3>${r.t}</h3><p>${r.d}</p><p class="note">Bila arah kiblat sulit dicapai, menghadaplah ke arah yang mampu.</p></div></div><div class="ctl"><button class="btn alt" id="re">Ulangi pertanyaan</button></div></div>`;
+$('re').onclick=()=>{qi=0;ask()};
+w.querySelectorAll('.bowbtns button').forEach(b=>b.onclick=()=>{w.querySelectorAll('.bowbtns button').forEach(x=>x.classList.remove('on'));b.classList.add('on');$('torso').style.transform=`rotate(${b.dataset.a}deg)`})}
+ask();
+const links=[...document.querySelectorAll('nav a')],secs=links.map(a=>document.querySelector(a.hash));
+addEventListener('scroll',()=>{let k=0;secs.forEach((s,j)=>{if(s.getBoundingClientRect().top<140)k=j});links.forEach((a,j)=>a.classList.toggle('on',j==k))},{passive:true});
+</script></body></html>
